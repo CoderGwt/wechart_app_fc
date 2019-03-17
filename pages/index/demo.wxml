@@ -1,0 +1,14 @@
+<view>
+    <text>序号</text>
+    <text>名字</text>
+    <text>年龄</text>
+    <text>性别</text>
+</view>
+<view wx:for="{{users}}">
+    <text>{{index + 1}}</text>
+    <text>{{item.name}}</text>
+    <text>{{item.age}}</text>
+    <text>{{item.gender}}</text>
+    <text wx:if="{{item.age >=  18}}">成年</text>
+    <text wx:elif="{{item.age < 18}}">未成年</text>
+</view>

@@ -1,0 +1,81 @@
+
+.rpx {
+  width: 750rpx;
+  height: 200rpx;
+  background-color: pink;
+}
+
+page {
+  background-color: #F0F0F0;
+}
+
+swiper {
+  height: 320rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 320rpx;
+}
+
+/* 活动列表 */
+.title {
+  display: block;
+  font-size: 28rpx;
+  color: #3C3C3C;
+  font-weight: 700;
+  padding: 20rpx 0 20rpx 30rpx;
+  background-color: #FFF;
+}
+
+.item image {
+  width: 750rpx;
+  height: 320rpx;
+}
+
+.item .name {
+  line-height: 1.5;
+  font-size: 30rpx;
+  color: #3C3C3C;
+}
+
+.item {
+  margin-bottom: 20rpx;
+  /* 解决空白元素占用空间的问题 */
+  font-size: 0;
+  background-color: #FFF;
+
+}
+
+.item .meta {
+  height: 180rpx;
+  padding: 16rpx 130rpx 0 30rpx;
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+.item .extra {
+  font-size: 22rpx;
+  color: #B4B4B4;
+
+  position: absolute;
+  bottom: 20rpx;
+}
+
+.item .label {
+  font-size: 30rpx;
+  color: #FE6249;
+
+  position: absolute;
+  right: 30rpx;
+  top: 20rpx;
+}
+
+.item .icon-flag {
+  margin-right: 10rpx;
+}
+
+.item .icon-clock {
+  margin: 0 10rpx;
+}

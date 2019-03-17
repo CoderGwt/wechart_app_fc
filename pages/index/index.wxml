@@ -1,0 +1,31 @@
+<!-- <view class="rpx">
+</view> -->
+
+<!-- swiper 是小程序专门的实现轮播效果的组件 -->
+<swiper indicator-dots="{{true}}" indicator-color="rgba(255, 255, 255, 0.6)" indicator-active-color="#FFF" circular="{{true}}" autoplay="{{true}}">
+<block wx:for="{{slides}}">
+  <swiper-item>
+    <image src="{{item}}" />
+  </swiper-item>
+</block>
+</swiper>
+
+<!-- 活动列表 -->
+<text class="title">{{title}}</text>
+<view class="items">
+
+  <view class="item" wx:for="{{items}}">
+    <image src="{{item.url}}"></image>
+    <view class="meta">
+      <text class="name">{{item.text}}</text>
+      <!--通过{{label}}指定-->
+      <view class="extra">
+        <text>{{item.total}}人已报名</text>
+        <text class="icon-clock"></text>
+        <text>本{{item.data}}开始</text>
+      </view>
+      <text class="label">{{item.label}}</text>
+    </view>
+  </view>
+
+</view>
