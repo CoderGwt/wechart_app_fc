@@ -1,0 +1,27 @@
+<button bind:tap="foo">点击事件</button>
+<input type="text" placeholder="输入信息" bind:focus="sayHi" bind:blur="sayBye" />
+
+<!-- 如果都是bind:tap;点击小的也会触发大的；
+    如果大的是catch，小的是bind,点击小的也会触发大的。
+
+    如果大的是bind，小的是catch,则不会出现以上问题；
+    如果两个都是catch，也不会出现以上问题
+
+    事件冒泡现象
+    阻止冒泡：
+
+    使用bind事件绑定不会阻止冒泡事件向上冒泡，
+       catch事件绑定可以阻止冒泡事件向上冒泡
+ -->
+
+ <!-- 事件冒泡 -->
+
+<view class="outer" catch:tap="a">
+    <view class="inner" catch:tap="b"></view>
+</view> 
+
+<!-- 事件监听， 事件对象 -->
+<view bind:tap="clickMe">点击试试</view>
+<view bind:tap="title" data-title='{{title}}' data-id='1'>{{ title}}</view>
+<input bind:focus='get' placeholder='输入框' 
+bind:blur='lost' style='border: 1px solid red;'></input>
