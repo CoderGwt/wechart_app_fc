@@ -1,0 +1,46 @@
+
+page {
+  background-color: #F0F0F0;
+}
+
+.login form {
+  display: block;
+  background-color: #FFF;
+}
+
+.item {
+  display: flex;
+  line-height: 80rpx;
+  margin-left: 30rpx;
+  padding-right: 30rpx;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+
+.item label {
+  width: 120rpx;
+  font-size: 28rpx;
+  color: #3C3C3C;
+}
+
+.item input {
+  flex: 1;
+  height: 80rpx;
+  text-align: right;
+  font-size: 28rpx;
+  color: #C9C9C9;
+}
+
+.btn {
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 40rpx 80rpx;
+  background-color: #FECA49;
+  color: #FFF;
+  font-size: 32rpx;
+}
+
+.btn::after {
+  content: '';
+  border: none;
+}
+

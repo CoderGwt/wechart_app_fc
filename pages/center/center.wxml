@@ -1,0 +1,21 @@
+<view class="login">
+  <form>
+    <view class="item">
+      <label>姓名：</label>
+      <input placeholder="请填写你的真实姓名"/>
+    </view>
+    <view class="item">
+      <label>手机：</label>
+      <input placeholder="请填写你的真实姓名"/>
+    </view>
+    <view class="item">
+      <label>身份证：</label>
+      <input placeholder="请填写你的真实姓名"/>
+    </view>
+    <view class="item">
+      <label>验证码：</label>
+      <input placeholder="六位数验证码"/>
+    </view>
+  </form>
+  <button class="btn">绑定并登录</button>
+</view>
